@@ -9,9 +9,8 @@
 - #### 로컬 저장소
 	  내 PC의 '.git' 디렉토리가 존재하는 디렉토리
   	  (git 저장소로 지정했거나 원격 저장소의 작업물을 복제해오는 저장소)
-    
-   
-   
+<br/>
+
 # 📋 Git 관리 공간
 
 - ### Working Directory (= Work Tree)
@@ -27,18 +26,54 @@
 	  커밋한 파일들이 저장되는 공간
  
  	  협업 프로젝트의 작업물 공유 목적이나 작업물 백업 용도로 사용하는 공간
-----
-# 📖 Git 명령어
+<br/>
 
-- #### 로컬 저장소 초기화
+----
+
+# 📖 Git 명령어
+### Github를 처음 사용한다면?
+- #### 로컬 저장소로 이동
+  	  cd c:\...
++ #### 로컬 저장소 초기화
 	  git init
-+ #### 현재 상태 확인
-  	  git status
-* #### 새로운 파일을 Staging Area에 추가
+* #### 로컬 저장소와 원격 저장소를 연동
+	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
+- #### 새로운 파일을 Staging Area에 추가
 	  git add
   	  git add . (로컬 저장소 내의 모든 파일을 추가)
-- #### Staging Area의 파일을 commit
+  	  git add 파일명 (특정 파일을 추가)
++ #### Staging Area의 파일을 commit
 	  git commit -m "Write Any Comment"
-- #### commit한 파일을 원격 저장소에 업로드
-	  git push origin main
+* #### commit한 파일을 원격 저장소에 업로드
+	  git push
   	  git push -u origin main (로컬 저장소와 원격 저장소를 연동시킴)
+      git push origin main (연동되지 않은 경우)
+- #### 원격 저장소의 변경사항을 로컬 저장소에 다운
+	  git pull
+	  git pull origin main (연동되지 않은 경우)
+### Branch 관련
+- #### 현재 상태 확인
+  	  git status
++ #### 원격 저장소와 로컬 저장소의 브랜치 목록 확인
+	  git branch -a
+* #### 브랜치 이동
+	  git checkout 브랜치명
+- #### 브랜치를 생성한 후 바로 이동
+	  git branch -b 브랜치명
++ #### 해당 브랜치를 원격 저장소와 연동
+	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
+* #### 원격 저장소의 해당 브랜치에 업로드
+  	  git push origin 브랜치명
+- #### 브랜치 삭제
+	  git branch -d 브랜치명
+	  git branch -D 브랜치명 (강제 삭제)
++ #### 브랜치 병합
+	  git merge 브랜치명
+### 그외
+- #### 원격 저장소의 브랜치 목록을 갱신
+	  git fetch --prune
++ #### 변경 사항 확인
+	  git diff origin/브랜치명 (로컬 저장소 & 원격 저장소)
+	  git diff 브랜치명 다른 브랜치명 (로컬 저장소)
+* #### 원격 저장소를 로컬에 복제
+	  git clone https://github.com/사용자 이름/원격 저장소 이름.git
