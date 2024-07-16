@@ -38,6 +38,8 @@
 	  git init
 * #### 로컬 저장소와 원격 저장소를 연동
 	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
+- #### main 브랜치 생성
+	  git branch -M main
 - #### 새로운 파일을 Staging Area에 추가
 	  git add
   	  git add . (로컬 저장소 내의 모든 파일을 추가)
