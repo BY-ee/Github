@@ -64,11 +64,15 @@
 	  git branch -b 브랜치명
 + #### 해당 브랜치를 원격 저장소와 연동
 	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
+- #### 로컬 브랜치와 원격 브랜치를 연동
+ 	  git branch --set-upstream-to origin/브랜치
 * #### 원격 저장소의 해당 브랜치에 업로드
   	  git push origin 브랜치명
-- #### 브랜치 삭제
+- #### 로컬 브랜치 삭제
 	  git branch -d 브랜치명
 	  git branch -D 브랜치명 (강제 삭제)
++ #### 원격 브랜치 삭제
+	  git push origin :브랜치명
 + #### 브랜치 병합
 	  git merge 브랜치명
 ### 그외
