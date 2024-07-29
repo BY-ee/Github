@@ -62,6 +62,8 @@
 	  git checkout 브랜치명
 - #### 브랜치를 생성한 후 바로 이동
 	  git branch -b 브랜치명
+- #### 브랜치 이름 변경
+	  git branch -m 새로운 브랜치명
 + #### 해당 브랜치를 원격 저장소와 연동
 	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
 - #### 로컬 브랜치와 원격 브랜치를 연동
