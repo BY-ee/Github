@@ -49,37 +49,38 @@
 * #### commit한 파일을 원격 저장소에 업로드
 	  git push
   	  git push -u origin main (로컬 저장소와 원격 저장소를 연동시킴)
-      git push origin main (연동되지 않은 경우)
+      	  git push origin main (연동되지 않은 경우)
 - #### 원격 저장소의 변경사항을 로컬 저장소에 다운
 	  git pull
 	  git pull origin main (연동되지 않은 경우)
-### Branch 관련
+### 로컬 브랜치
 - #### 현재 상태 확인
   	  git status
-+ #### 원격 저장소와 로컬 저장소의 브랜치 목록 확인
++ #### 로컬 저장소와 원격 저장소의 브랜치 목록 확인
 	  git branch -a
-* #### 브랜치 이동
+* #### 로컬 브랜치 이동
 	  git checkout 브랜치명
-- #### 브랜치를 생성한 후 바로 이동
+- #### 로컬 브랜치를 생성한 후 바로 이동
 	  git branch -b 브랜치명
-- #### 브랜치 이름 변경
+- #### 로컬 브랜치 이름 변경
 	  git branch -m 새로운 브랜치명
-+ #### 해당 브랜치를 원격 저장소와 연동
++ #### 현재 로컬 브랜치를 원격 저장소와 연동
 	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
 - #### 로컬 브랜치와 원격 브랜치를 연동
  	  git branch --set-upstream-to origin/브랜치
-* #### 원격 저장소의 해당 브랜치에 업로드
-  	  git push origin 브랜치명
 - #### 로컬 브랜치 삭제
 	  git branch -d 브랜치명
 	  git branch -D 브랜치명 (강제 삭제)
-+ #### 원격 브랜치 삭제
-	  git push origin :브랜치명
 + #### 브랜치 병합
 	  git merge 브랜치명
-### 그외
+### 원격 브랜치
++ #### 원격 브랜치 삭제
+	  git push origin :브랜치명
 - #### 원격 저장소의 브랜치 목록을 갱신
 	  git fetch --prune
+* #### 원격 저장소의 해당 브랜치에 업로드
+  	  git push origin 브랜치명
+### 그외
 + #### 변경 사항 확인
 	  git diff origin/브랜치명 (로컬 저장소 & 원격 저장소)
 	  git diff 브랜치명 다른 브랜치명 (로컬 저장소)
