@@ -40,7 +40,7 @@
 	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
 - #### main 브랜치 생성
 	  git branch -M main
-- #### 새로운 파일을 Staging Area에 추가
+* #### 새로운 파일을 Staging Area에 추가
 	  git add
   	  git add . (로컬 저장소 내의 모든 파일을 추가)
   	  git add 파일명 (특정 파일을 추가)
@@ -62,7 +62,7 @@
 	  git checkout 브랜치명
 - #### 로컬 브랜치를 생성한 후 바로 이동
 	  git branch -b 브랜치명
-- #### 로컬 브랜치 이름 변경
+* #### 로컬 브랜치 이름 변경
 	  git branch -m 새로운 브랜치명
 + #### 현재 로컬 브랜치를 원격 저장소와 연동
 	  git remote add origin https://github.com/사용자 이름/원격 저장소 이름.git
@@ -86,3 +86,9 @@
 	  git diff 브랜치명 다른 브랜치명 (로컬 저장소)
 * #### 원격 저장소를 로컬에 복제
 	  git clone https://github.com/사용자 이름/원격 저장소 이름.git
+  
+- #### 가장 최근의 로컬 브랜치 commit 내역을 삭제
+	  git reset HEAD^
+
++ #### 로컬 브랜치의 변경 사항을 강제로 push
+	  git push -f origin 브랜치명
